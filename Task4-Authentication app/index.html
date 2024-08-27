@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Authentication System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="registerForm" class="form-container">
+            <h2>Register</h2>
+            <input type="text" id="registerUsername" placeholder="Enter Username" required>
+            <input type="password" id="registerPassword" placeholder="Enter Password" required>
+            <button onclick="register()">Register</button>
+            <p>Already have an account? <a href="#" onclick="showLoginForm()">Login</a></p>
+        </div>
+
+        <div id="loginForm" class="form-container" style="display: none;">
+            <h2>Login</h2>
+            <input type="text" id="loginUsername" placeholder="Enter Username" required>
+            <input type="password" id="loginPassword" placeholder="Enter Password" required><br>
+            <button onclick="login()">Login</button>
+            <p>Don't have an account? <a href="#" onclick="showRegisterForm()">Register</a></p>
+        </div>
+
+        <div id="securedPage" class="form-container" style="display: none;">
+            <h2>Welcome, <span id="user"></span></h2>
+            <p>You have successfully logged in!</p>
+            <button onclick="logout()">Sign Out</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
