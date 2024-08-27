@@ -7,13 +7,16 @@ body {
     height: 100vh;
     background-color: #c0bbbb;
     font-family: 'Arial', sans-serif;
+    background-image: url(https://media.istockphoto.com/id/626056624/vector/mathematics-background.jpg?s=612x612&w=0&k=20&c=iSbq5qu3ecQt7-Sfx7IkpTSDFlayNyrUR4YUyED8keE=);
+    background-position: center;
+    background-size: cover;
 }
 
 .calculator {
     border: 1px solid #ccc;
     border-radius: 10px;
     padding: 20px;
-    background-color: #9c9797;
+    background-color:#5c5c5c;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
